@@ -25,8 +25,8 @@ const Container = styled.div`
   align-items: center;
 
   width: fit-content;
-  padding: 12px 16px;
-  gap: 24px;
+  padding: 12px 10px 12px 16px;
+  gap: 18px;
   border-radius: 8px;
 
   color: ${COLORS.gray700};
