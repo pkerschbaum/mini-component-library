@@ -6,13 +6,7 @@ import { COLORS } from '../../constants';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
 
-const IconInput = ({
-  label,
-  icon,
-  width = 250,
-  size,
-  placeholder,
-}) => {
+const IconInput = ({ label, icon, width = 250, size, placeholder }) => {
   return 'TODO';
 };
 
