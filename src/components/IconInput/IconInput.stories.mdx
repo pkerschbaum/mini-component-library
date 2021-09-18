@@ -30,17 +30,58 @@ import IconInput from './IconInput';
   }}
 />
 
-export const Template = (args) => <IconInput {...args} />;
+export const Template = (args) => (
+  <div style={{ width: 400 }}>
+    <IconInput {...args} />
+  </div>
+);
 
 # IconInput
 
 <Story
-  name="Default"
+  name="search - Small"
   args={{
     placeholder: 'Search…',
     label: 'Search',
     icon: 'search',
     size: 'small',
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name="search - Large"
+  args={{
+    placeholder: 'Search…',
+    label: 'Search',
+    icon: 'search',
+    size: 'large',
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name="search - Large - 100px"
+  args={{
+    placeholder: 'Search…',
+    label: 'Search',
+    icon: 'search',
+    size: 'large',
+    width: 100,
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name="at-sign - Large"
+  args={{
+    placeholder: 'E-Mail...',
+    label: 'E-Mail',
+    icon: 'at-sign',
+    size: 'large',
   }}
 >
   {Template.bind({})}
